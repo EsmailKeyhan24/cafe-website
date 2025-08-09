@@ -1,0 +1,14 @@
+@mixin responsive($breakPoint){
+    @if $breakPoint =='phoneSm'{
+        @content ;
+    }
+    @else if $breakPoint=='phonelg'{
+        @content ;
+    }
+    @else if $breakPoint=='md'{
+        @content ;
+    }
+    @else if $breakPoint=='lg'{
+        @content ;
+    }
+}

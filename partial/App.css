@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main, header, footer, section, div, article, nav, ul, figure, figcaption, aside {
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=App.css.map */

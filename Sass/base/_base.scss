@@ -1,0 +1,15 @@
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    img{
+        object-fit: cover;
+    }
+
+    main,header,footer,div,section,article,figure,figcaption,ul,aside{
+        display: flex;
+        flex-wrap: wrap;
+    }

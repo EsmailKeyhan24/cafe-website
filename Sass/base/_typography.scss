@@ -1,0 +1,23 @@
+@font-face {
+    font-family:Shabnam-Bold;
+    src: url(../../assets/fonts/Shabnam-Bold-FD.ttf);
+}
+
+@font-face {
+    font-family:Shabnam-Medium;
+    src: url(../../assets/fonts/Shabnam-Medium-FD.ttf);
+}
+
+@font-face {
+    font-family:Shabnam-Light;
+    src: url(../../assets/fonts/Shabnam-Light-FD.ttf);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:Shabnam-Bold;
+}
+p{
+    font-family:Shabnam-Light;
+}
+a{
+    font-family: Shabnam-Medium;
+}
