@@ -109,10 +109,10 @@
                 height: 120px;
                 >*{
                     height: 100%;
-                    border:3px solid gold;
+                    // border:3px solid gold;
                 }
                 >figure{
-                    width: 30%;
+                    width: 25%;
                     background-color:map-get($colors , "white" );
                     height: 100%;
                     >a{
@@ -120,15 +120,23 @@
                         align-items: center;
                         display: flex;
                         >img{
-                            height: 50%;
+                            height: 40%;
                         }
                     }
                 }
                 >nav{
-                    width: 70%;
+                    width: 75%;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
                     >ul{
                         height: 100%;
                         align-items: center;
+                        flex-wrap: nowrap;
+                        width:650px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         >li{
                             >a{
                                 padding-inline:12px;
@@ -136,6 +144,81 @@
                             }
                         }
                     }
+                    // _DIV___
+                    >div{
+                        flex-wrap: nowrap;
+                        >a{
+                            display: flex;
+                            width: 180px;
+                            height: 47px;
+                            background-color:map-get($colors , "tomato-1" );
+                            border-radius: 4px;
+                            align-items: center;
+                            color:map-get($colors , "white" );
+                            transition:.3s;
+                            &:hover{
+                                color:map-get($colors , "darkBlack" );
+                            }
+                            >i{
+                                display: flex;
+                                height: 100%;
+                                width: 55px;
+                                background-color:map-get($colors , "tomato-gray" );
+                                justify-content: center;
+                                align-items: center;
+                                margin-left:15px;
+                            }
+                        }
+                        #sabadKharid{
+                            color:map-get($colors, "white" );
+                            margin-right:30px;
+                            align-items: center;
+                            position: relative;
+                            >i{
+                                font-size:25px;
+                                cursor: pointer;
+                            }
+                            >span{
+                                display: flex;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                position: absolute;
+                                background-color:map-get($colors , "tomato-gray" );
+                                justify-content: center;
+                                align-items: center;
+                                top: -1px;right: 40px;
+                            }
+                            >p{
+                                color:map-get($colors, "tomato-1" );
+                                margin-right:15px;
+                            }
+                            #sabad{
+                                width: 350px;
+                                height: 200px;
+                                background-color:map-get($colors, "black" );
+                                position: absolute;
+                                top: 130%;
+                                left: 10px;
+                                padding:25px;
+                                text-align: center;
+                                opacity: 0;
+                                visibility:hidden;
+                                transition:.3s;
+                                >li{
+                                    width: 100%;
+                                    height: 100%;
+                                    border:1px solid rgba(128, 128, 128, 0.427);
+                                    border-radius: 4px;
+                                    color:rgba(178, 178, 178, 0.521);
+                                }
+                            }
+                            &:hover>#sabad{
+                                opacity: 1;
+                                visibility:visible;
+                            }
+                        }
+                    }//end of idv
                 }
             }
         }

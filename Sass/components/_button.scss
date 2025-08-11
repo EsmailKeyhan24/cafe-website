@@ -1,0 +1,35 @@
+.btn{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 3px;
+    color:map-get($colors, "white" );
+    >i{
+        display: flex;
+        height: 100%;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    &:hover>i{
+        animation:btns 0.1s ease-in-out forwards;
+    }
+    &:hover{
+        color:map-get($colors , "black" );
+    }
+}
+
+@keyframes btns {
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(-40px);   
+    }
+    75%{
+        transform: translateX(-40px);   
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
